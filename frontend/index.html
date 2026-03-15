@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SG Educational Course Recommender</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="app-shell">
+      <main class="hero-card">
+        <div class="hero-top">
+          <div class="hero-copy">
+            <div class="app-badge">Study Discovery</div>
+            <h1>SG Educational Course Recommender</h1>
+            <p class="hero-subtle">
+              Discover courses, compare options, and save your shortlist.
+            </p>
+          </div>
+        </div>
+
+        <section class="search-panel">
+          <div class="filter-grid">
+            <select id="institutionType" aria-label="Institution type"></select>
+            <select id="level" aria-label="Level"></select>
+            <select id="institution" aria-label="Institution"></select>
+          </div>
+
+          <div class="toggle-row">
+            <label class="toggle">
+              <input type="checkbox" id="requiresMath" />
+              <span>Requires Math</span>
+            </label>
+
+            <label class="toggle">
+              <input type="checkbox" id="requiresEnglish" />
+              <span>Requires English</span>
+            </label>
+
+            <label class="toggle">
+              <input type="checkbox" id="useSemantic" />
+              <span>Semantic search</span>
+            </label>
+
+            <label class="toggle">
+              <input type="checkbox" id="useHybrid" disabled />
+              <span>Hybrid (semantic + keywords)</span>
+            </label>
+          </div>
+
+          <div class="search-row">
+            <input
+              id="query"
+              type="text"
+              placeholder="Search by interest, keyword, or skill..."
+              autocomplete="off"
+            />
+            <button id="btn" type="button">Explore Courses</button>
+          </div>
+
+          <div id="msg" class="message"></div>
+
+          <div class="action-row">
+            <button id="btnSaved" class="secondary-btn" type="button">
+              ⭐ My Saved Courses
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <!-- Saved-only view -->
+      <section
+        id="savedPanel"
+        class="savedPanel"
+        style="display: none"
+      ></section>
+
+      <!-- Compare bar -->
+      <div id="compareBar" class="compareBar" style="display: none">
+        <div>
+          <strong>Compare:</strong>
+          <span id="compareCount">0</span> selected (max 3)
+        </div>
+        <div class="compareActions">
+          <button id="btnCompare" type="button">Compare now</button>
+          <button id="btnClearCompare" type="button">Clear</button>
+        </div>
+      </div>
+
+      <section
+        id="comparePanel"
+        class="comparePanel"
+        style="display: none"
+      ></section>
+
+      <!-- Search results -->
+      <section id="results"></section>
+    </div>
+
+    <!-- Chatbot -->
+    <button
+      id="chatToggle"
+      class="chatToggle"
+      type="button"
+      title="Harneet - SG Study Guide"
+      aria-label="Open chatbot"
+    >
+      💬
+    </button>
+
+    <div id="chatWidget" class="chatWidget hidden" aria-label="Harneet chatbot">
+      <div class="chatHeader">
+        <div class="chatTitleWrap">
+          <div class="chatTitle">Harneet</div>
+          <div class="chatSubtitle">SG Study Guide</div>
+        </div>
+        <button id="chatClose" class="chatClose" type="button" title="Close">
+          ✕
+        </button>
+      </div>
+
+      <div id="chatMessages" class="chatMessages"></div>
+
+      <div class="chatInputRow">
+        <input
+          id="chatInput"
+          class="chatInput"
+          placeholder="Ask Harneet..."
+          autocomplete="off"
+        />
+        <button id="chatBtn" class="chatSend" type="button">Send</button>
+      </div>
+    </div>
+
+    <script src="app.js?v=7"></script>
+  </body>
+</html>

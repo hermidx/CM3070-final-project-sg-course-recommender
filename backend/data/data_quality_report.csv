@@ -1,0 +1,9 @@
+metric,value
+rows_total,1973
+url_invalid_count,0
+url_duplicate_count,114
+missing_course_name_count,0
+missing_institution_count,0
+missing_description_count,0
+missing_fees_count,0
+missing_entry_requirements_count,0
