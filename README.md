@@ -1,18 +1,9 @@
-````markdown
-# CM3070 Final Project – SG Course Recommender
-
-This project is a data-driven personalised educational content recommendation system focused on Singapore post-secondary courses. It allows users to search, filter, and explore courses through a web interface, with recommendations and course data served by a FastAPI backend.
-
 ## Project Structure
 
 ```text
 FINAL_PRODUCT/
-│
 ├── backend/
-│   ├── __pycache__/
-│   ├── .venv/
 │   ├── data/
-│   │   ├── app.db
 │   │   ├── courses_clean.csv
 │   │   ├── courses.csv
 │   │   └── data_quality_report.csv
@@ -23,14 +14,11 @@ FINAL_PRODUCT/
 │   ├── db.py
 │   ├── main.py
 │   └── requirements.txt
-│
 ├── frontend/
 │   ├── app.js
 │   ├── index.html
 │   └── styles.css
-│
-└── README.md
-````
+```
 app.db is excluded from version control because it is a generated local SQLite database built from the dataset files.
 
 ## Features
