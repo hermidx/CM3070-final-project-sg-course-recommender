@@ -31,6 +31,7 @@ FINAL_PRODUCT/
 │
 └── README.md
 ````
+app.db is excluded from version control because it is a generated local SQLite database built from the dataset files.
 
 ## Features
 
