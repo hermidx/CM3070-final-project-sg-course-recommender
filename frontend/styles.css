@@ -1,0 +1,319 @@
+body {
+  font-family: system-ui, -apple-system, Arial;
+  background: #f6f7fb;
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+select,
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+
+.card-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.meta {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-bottom: 8px;
+}
+
+.skills {
+  font-size: 13px;
+  opacity: 0.85;
+  margin: 6px 0 8px;
+}
+
+.skills strong {
+  font-weight: 700;
+}
+
+.score {
+  min-width: 140px;
+  text-align: right;
+}
+
+.scoreLabel {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.scoreVal {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.msg {
+  margin-top: 8px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.sub {
+  opacity: 0.75;
+  margin-top: -6px;
+}
+
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.comparePick {
+  font-size: 0.9rem;
+  user-select: none;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.compareBar {
+  margin: 12px 0;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.compareActions {
+  display: flex;
+  gap: 8px;
+}
+
+.comparePanel {
+  margin: 14px 0;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.compareTableWrap {
+  overflow-x: auto;
+}
+
+.compareTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.compareTable th,
+.compareTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* semantic/hybrid toggle row */
+.row.toggles {
+  align-items: center;
+  gap: 18px;
+  margin-top: 4px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  opacity: 0.85;
+  user-select: none;
+}
+
+/* richer fields on each card */
+.details {
+  margin-top: 10px;
+  font-size: 13px;
+  opacity: 0.9;
+  display: grid;
+  gap: 6px;
+}
+
+.detailRow strong {
+  font-weight: 700;
+}
+
+.badgeNil {
+  opacity: 0.6;
+  font-style: italic;
+}
+
+/* actions */
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.officialLink,
+.officialLinkSaved {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.officialLink:hover,
+.officialLinkSaved:hover {
+  text-decoration: underline;
+}
+
+/* search summary */
+.searchSummary {
+  background: #f7f8fb;
+  border: 1px solid #e2e6ef;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+}
+
+.summaryTop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.modeBadge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e9eefc;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.personalBadge {
+  background: #e8f7ec;
+}
+
+.resultCount {
+  font-size: 0.9rem;
+  color: #444;
+  font-weight: 600;
+}
+
+.summaryNote {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* why matched */
+.sectionTitle {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 10px 0 6px;
+}
+
+.whyMatched {
+  margin-top: 8px;
+}
+
+.whyPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.why-pill {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eef3ff;
+  font-size: 0.82rem;
+}
+
+/* missing fields */
+.missingInfo {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.missingLabel {
+  margin-right: 6px;
+  font-weight: 600;
+}
+
+.missing-pill {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #fff3cd;
+  margin-right: 6px;
+  font-size: 0.78rem;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .container {
+    margin: 16px;
+    padding: 16px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .score {
+    min-width: unset;
+    text-align: left;
+  }
+
+  .card-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .compareBar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
